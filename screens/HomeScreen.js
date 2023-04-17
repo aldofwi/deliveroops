@@ -1,7 +1,9 @@
 import React, { useLayoutEffect } from 'react'
-import { View, Text, SafeAreaView, Image, TextInput } from 'react-native'
+import { View, Text, SafeAreaView, Image, TextInput, ScrollView } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { UserIcon, ChevronDownIcon, MagnifyingGlassIcon, AdjustmentsVerticalIcon } from "react-native-heroicons/outline";
+import Categories from '../components/Categories';
+import FeaturedRow from '../components/FeaturedRow';
 
 const HomeScreen = () => {
 
@@ -15,10 +17,8 @@ const HomeScreen = () => {
 
   return (
     <SafeAreaView className="bg-white pt-5">
-      <Text className="text-red-500">
-      
         {/* Header */}
-        <View className="flex-row pb-3 items-center mx-4 space-x-2 px-4">
+        <View className="flex-row pb-3 items-center mx-4 space-x-2">
             <Image 
                 source={{
                     uri: 'https://links.papareact.com/wru'
@@ -37,7 +37,7 @@ const HomeScreen = () => {
         </View>
 
         {/* Search */}
-        <View className="flex-row items-center space-x-2 pb-2 mx-4 px-4">
+        <View className="flex-row items-center space-x-2 pb-2 mx-4">
             <View className="flex-row flex-1 space-x-2 bg-gray-200 p-3">
                 <MagnifyingGlassIcon color="gray" size={20} />
                 <TextInput  placeholder='Restaurants and cuisines'
@@ -47,10 +47,28 @@ const HomeScreen = () => {
             <AdjustmentsVerticalIcon color="#00CCBB" />
         </View>
 
-        {/* Content */}
-
-
-      </Text>
+        {/* Body */}
+        <ScrollView>
+            {/* Category */}
+            <Categories />
+            {/* Featured row */}
+            <FeaturedRow
+                id="123"
+                title="Featured"
+                description="Paid placements for our partners"
+            />
+            <FeaturedRow
+                id="1234"
+                title="Tasty Discounts"
+                description="Everyone's been enjoying these juicy discounts"
+            />
+            <FeaturedRow
+                id="1235"
+                title="Offers near you!"
+                description="Why not support your local restaurant tonight!"
+            />
+        </ScrollView>
+  
     </SafeAreaView>
   );
 };
