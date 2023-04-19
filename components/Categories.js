@@ -20,7 +20,6 @@ const Categories = () => {
         <CategoryCard imgUrl='https://links.papareact.com/gn7' title='Testing5' />
         <CategoryCard imgUrl='https://links.papareact.com/gn7' title='Testing6' />
 
-
     </ScrollView>
   )
 }

@@ -1,19 +1,40 @@
-import React, { useLayoutEffect } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { View, Text, SafeAreaView, Image, TextInput, ScrollView } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { UserIcon, ChevronDownIcon, MagnifyingGlassIcon, AdjustmentsVerticalIcon } from "react-native-heroicons/outline";
 import Categories from '../components/Categories';
 import FeaturedRow from '../components/FeaturedRow';
+// import sanityClient from '../sanity'
+// import category from '../sanity/schemas/category';
 
 const HomeScreen = () => {
 
     const navigation = useNavigation();
+    // const [featuredCategories, setFeaturedCategories] = useState([]);
 
     useLayoutEffect(() => {
         navigation.setOptions({
             headerShown: false,
         });
     }, []);
+
+    /*
+    useEffect(() => {
+        sanityClient.fetch(`
+        *[_type == "featured"]{
+            ...,
+          restaurants[]->{
+            ...,
+            dishes[]->
+              }
+        }
+        `).then((data) => {
+            setFeaturedCategories(data);
+        });
+    }, []);
+
+    console.log(featuredCategories);
+*/
 
   return (
     <SafeAreaView className="bg-white pt-5">
@@ -51,7 +72,18 @@ const HomeScreen = () => {
         <ScrollView>
             {/* Category */}
             <Categories />
-            {/* Featured row */}
+            {/* Featured row 
+
+            {featuredCategories?.map(category => (
+                <FeaturedRow
+                    key={category._id}
+                    id={category._id}
+                    title={category.name}
+                    description={category.short_description}
+                />    
+            ))}
+            */}
+
             <FeaturedRow
                 id="123"
                 title="Featured"
@@ -67,6 +99,7 @@ const HomeScreen = () => {
                 title="Offers near you!"
                 description="Why not support your local restaurant tonight!"
             />
+
         </ScrollView>
   
     </SafeAreaView>
