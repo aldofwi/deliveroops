@@ -2,7 +2,7 @@
   "name": "deliveroops",
   "private": true,
   "version": "1.0.0",
-  "main": "packaging.json",
+  "main": "package.json",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "sanity dev",

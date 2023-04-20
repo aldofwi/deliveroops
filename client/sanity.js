@@ -7,8 +7,8 @@ const client = createClient({
     projectId: 'nyv2u0wa',
     dataset: "production",
     useCdn: true,
-    //apiVersion: "2022-02-01",
     apiVersion: "2021-10-21",
+    //apiVersion: "2022-02-01",
     // token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
 });
 
