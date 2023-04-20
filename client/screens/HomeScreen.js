@@ -32,7 +32,7 @@ const HomeScreen = () => {
         });
     }, []);
 
-    console.log(featuredCategories);
+    // console.log(featuredCategories);
 
 
   return (

@@ -28,7 +28,7 @@ const FeaturedRow = ({ id, title, description}) => {
     });
 }, [id]);
 
-console.log(restaurants);
+// console.log(restaurants);
 
   return (
 
