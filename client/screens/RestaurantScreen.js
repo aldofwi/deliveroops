@@ -32,7 +32,6 @@ const RestaurantScreen = () => {
 
     console.log(title);
     console.log(genre);
-    console.log(dishes);
 
   return (
 

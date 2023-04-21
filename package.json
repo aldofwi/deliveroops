@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "react-native-url-polyfill": "^1.3.0"
+  },
+  "dependencies": {
+    "react-native-format-currency": "^0.0.3"
   }
 }
