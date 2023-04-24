@@ -34,7 +34,6 @@ const HomeScreen = () => {
 
     // console.log(featuredCategories);
 
-
   return (
     <SafeAreaView className="bg-white pt-5">
         {/* Header */}
@@ -72,16 +71,17 @@ const HomeScreen = () => {
             {/* Category */}
             <Categories />
 
-            {/* Featured row */}
-            {featuredCategories?.map(category => (
-                <FeaturedRow
-                    key={category._id}
-                    id={category._id}
-                    title={category.name}
-                    description={category.short_description}
-                />    
-            ))}
-            
+            <View className='pb-32'>
+                {/* Featured row */}
+                {featuredCategories?.map(category => (
+                    <FeaturedRow
+                        key={category._id}
+                        id={category._id}
+                        title={category.name}
+                        description={category.short_description}
+                    />    
+                ))}
+            </View>
         </ScrollView>
   
     </SafeAreaView>
