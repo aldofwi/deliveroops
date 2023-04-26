@@ -30,7 +30,7 @@ const DeliveryScreen = () => {
                 <View className='flex-row justify-between'>
                     <View>
                         <Text className='text-lg text-gray-400'>Estimated Arrival</Text>
-                        <Text className='text-4xl font-bold'>45-55 Minutes</Text>
+                        <Text className='text-4xl font-bold'>45-50 Minutes</Text>
                     </View>
 
                     <Image
