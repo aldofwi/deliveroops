@@ -30,3 +30,12 @@ Following is the Best way to learn.
 ## Fact ♻️
 
 Sharing is caring.
+
+## Screenshots 📸
+
+<img src="client/assets/screenshots/IMG_1380.jpg">
+<img src="client/assets/screenshots/IMG_1381.jpg">
+<img src="client/assets/screenshots/IMG_1382.jpg">
+<img src="client/assets/screenshots/IMG_1383.jpg">
+<img src="client/assets/screenshots/IMG_1385.jpg">
+
