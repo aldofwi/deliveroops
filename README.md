@@ -33,9 +33,7 @@ Sharing is caring.
 
 ## Screenshots 📸
 
-<img src="client/assets/screenshots/IMG_1380.jpg" height="325" width="115" />
-<img src="client/assets/screenshots/IMG_1381.jpg" height="325" width="115"/>
-<img src="client/assets/screenshots/IMG_1382.jpg" height="325" width="115" />
-<img src="client/assets/screenshots/IMG_1383.jpg" height="325" width="115" />
-<img src="client/assets/screenshots/IMG_1385.jpg" height="325" width="115" />
+<img src="client/assets/screenshots/IMG_1380.jpg" height="325" width="150" /><img src="client/assets/screenshots/IMG_1381.jpg" height="325" width="150" />
+<img src="client/assets/screenshots/IMG_1382.jpg" height="325" width="150" /><img src="client/assets/screenshots/IMG_1383.jpg" height="325" width="150" />
+<img src="client/assets/screenshots/IMG_1385.jpg" height="325" width="150" />
 
